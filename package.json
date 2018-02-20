@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-web-scraper",
+  "version": "1.0.0",
+  "description": "Web Scraper",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NealRosenberger/mongodb-web-scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NealRosenberger/mongodb-web-scraper/issues"
+  },
+  "homepage": "https://github.com/NealRosenberger/mongodb-web-scraper#readme",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
+}

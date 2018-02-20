@@ -1,0 +1,13 @@
+.articleLink {
+  margin: 20px;
+  border: 1px solid black;
+  width: 100%
+}
+
+.articleLinkTitle {
+  margin: 20px;
+}
+
+.websiteHeader {
+  text-align: center;
+}

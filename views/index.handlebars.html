@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="container-fluid">
+      {{#each articles}}
+        <div class="articleLink">
+          <a href="/articles/{{this.id}}"><h3 class="articleLinkTitle">{{this.title}}</h3></a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

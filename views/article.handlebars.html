@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-2">
+    <a class="btn btn-default" href="/articles">Back</a>
+  </div>
+  <div class="col-md-8">
+    <a href="{{article.link}}"><h2>{{article.title}}</h2></a>
+    <p>{{article.summary}}</p>
+
+    <form action="{{article.id}}/comment/create" method="POST">
+        <input type="text" name= "user" placeholder="Name" />
+        <br/>
+        <textarea name="body" rows="2" placeholder="Write a comment!"></textarea>
+        <br/>
+        <input type="submit" class="btn btn-default" value="Post comment" />
+    </form>
+    
+    {{#if article.comments}}
+    <ul>
+      {{#each article.comments}}
+        <li>
+          {{this.user}}
+          <br/>
+          {{this.body}}
+          <br/>
+          <form action="comment/{{this.id}}/delete" method="POST">
+            <p>{{article.id}}</p>
+            <input type="submit" class="btn btn-danger" data-id="{{this.id}}" value="Delete">
+          </form>
+        </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+    
+  </div>
+  <div class="col-md-2"></div>
+</div>
