@@ -44,7 +44,7 @@ router.get('/', function(req, res) {
   res.redirect('/articles');
 });
 
-//Scrapes Kotaku's home page for articles
+
 router.get('/scrape', function(req, res) {
   request("http://www.espn.com/", function(error, response, html) {
     var $ = cheerio.load(html);
